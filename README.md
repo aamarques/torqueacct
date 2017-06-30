@@ -1,4 +1,3 @@
-# torqueacct
 Parses the Torque accounting files to extract some importants fields.
 
 usage: torqueacct.py [-h] [-l FILENAME] [-j JOBID] [-u USERNAME] [-q QUEUE]
@@ -24,6 +23,7 @@ optional arguments:
                         --csv
   -v, -V, --version     show program's version number and exit
 
+
  Here are some examples of filename use
 --------------------------------------
 
@@ -36,6 +36,7 @@ Note: When you are using wildcard, you must put it between quotation marks ("")
 
 You can mixe up all parameters to extract information you need
                      
+Attention:
 
 The default directory is /var/spool/torque/server_priv/accounting
 The option '-n or --cluster' is used to parse the log file in other directory where I put log files from many clusters.
@@ -44,3 +45,4 @@ In my case, /var/spool/torque/<CLUSTER NAME>/accounting
 Maybe you will need to change this.
 
 :-D
+
