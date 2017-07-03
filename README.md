@@ -13,33 +13,32 @@ If you want to use it, fell free to change.
 
 Parses the Torque accounting files to extract some importants fields.
 
+    usage: torqueacct.py [-h] [-l FILENAME] [-j JOBID] [-u USERNAME] [-q QUEUE]
+                         [-n CLUSTER] [-d] [-t] [-f | -c] [-v]
 
-usage: torqueacct.py [-h] -l FILENAME [-j JOBID] [-u USERNAME] [-q QUEUE] [-n CLUSTER] [-d] [-t] [-f | -c] [-v]
-
->  -h, --help                      Show this help message and exit
-  
->  -l FILENAME, --log FILENAME     The input log file to be parsed. REQUIRED
-                        
->  -j JOBID, --job JOBID           Search for a specific JobID
-                        
->  -u USERNAME, --user USERNAME    Search for a specific username
-                        
->  -q QUEUE, --queue QUEUE         Search for queue name
-                        
->  -n CLUSTER, --cluster CLUSTER   Name of the cluster (clermg1, lobo, volk)
-                        
->  -d, --del             Shows the Deleted results
-  
->  -t, --segs            Shows time fields in seconds
-  
->  -f, --csv             Shows the output results in a CSV format. DO NOT USE with --count
-                        
->  -c, --count           Shows only the Total count of results. DO NOT USE with --csv
-                        
->  -v, -V, --version     show program's version number and exit
+    optional arguments:
+      -h, --help            show this help message and exit
+      -l FILENAME, --log FILENAME
+                             The input log file to be parsed. REQUIRED
+      -j JOBID, --job JOBID
+                              Search for a specific JobID
+      -u USERNAME, --user USERNAME
+                            Search for a specific username
+      -q QUEUE, --queue QUEUE
+                            Search for queue name
+      -n CLUSTER, --cluster CLUSTER
+                            Name of the cluster (clermg1, lobo, volk)
+      -d, --del             Shows the Deleted results
+      -t, --segs            Shows time fields in seconds
+      -f, --csv             Shows the output results in a CSV format. DO NOT USE
+                            with --count
+      -c, --count           Shows only the Total count of results. DO NOT USE with
+                            --csv
+      -v, -V, --version     show program's version number and exit
 
 
-Here are some examples of filename use
+
+### Here are some examples of filename use
 --------------------------------------
 
 torqueacct.py -l 20170401  -> This will parse this date
